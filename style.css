@@ -19,6 +19,11 @@
     background: #111;
     color: #fff;
     z-index: 2;
+    transition: 1.2s;
+}
+.showcase.active{
+    right: 300px;
+    width: 80%;
 }
 .showcase header{
     position: absolute;
@@ -129,8 +134,30 @@
 .social li a:hover{
     transform: scale(0.7) translateY(-15px);
 }
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    position: relative;
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+.menu ul li a:hover{
+    color: #03a9f4;
+}
 
-@media (max-width:991px) {
+@media (max-width:798px) {
     .showcase,.showcase header{
         padding: 40px;
     }
